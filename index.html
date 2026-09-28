@@ -1,4 +1,60 @@
+
 <!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #1e1e1e;
+            text-align: center;
+            padding: 50px;
+        }
+        #main-content {
+            display: none; /* Hidden until they pass */
+        }
+        .gate-box {
+            background-color: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 0 auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-top: 15px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #444;
+            background-color: #2a2a2a;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- THE SECURITY GATE -->
+    <div id="typing-gate" class="gate-box">
+        <h2>Hmmmm</h2>
+        <p style="color: #ffffff;">Cause i'm evil😈</p>
+        <p style="color: #ffffff;">Type this exact sentence:</p>
+        <p style="font-style: italic; color: #4CAF50;" id="target-sentence">"Oshawott is the best and cutest Pokemon idc what you say"</p>
+        
+        <input type="text" id="user-input" placeholder="Start typing here..." autocomplete="off">
+        <p id="feedback" style="margin-top: 15px; font-weight: bold;"></p>
+        <p style="font-size: 12px; color: #888;">Target: At least 70 WPM</p>
+    </div>
+
+    <!-- YOUR ACTUAL WEBSITE CONTENT (Hidden initially) -->
+    <div id="main-content">
+        <h1>Idk why i did this</h1>
+        </body>
+</html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,34 +66,171 @@
 
     <header>
         <h1>Hi. I'm bored</h1>
-        <p>Welcome to this random thing I made cause I was bored.</p>
+        <p>If you want more time, freedom, and energy. Start saying no.</p>
     </header>
 
     <main>
         <section class="about">
             <h2>Hmmmmmm</h2>
-            <p>I like technology, ice cream, otter, building random stuff, taking random stuff apart. I don't like being bored.</p>
+            <p>I like technology, gears, mechanical stuff, music, logical and spatial puzzles, magic, ice cream, 🦦, 🦉, building random stuff, taking random stuff apart. I don't like being bored.</p>
         </section>
 
-        <section class="Stuff I like">
-            <h2>My Favorite Things</h2>
+<section class="photo-section" style="text-align: center;">
+    <h2>Sea otter. Very cute and evil 😁</h2>
+    <img src="otter.jpg" alt="Otter" style="max-width: 200px; border-radius: 10px;">
+</section>
+
+<section class="Stuff">
+            <h2>Cool stuff I can do (Or not that cool but I can do)</h2>
             <ul>
-                <li>tech</li>
-                <li>Not being bored</li>
-                <li>Playing music</li>
-                <li>Building and taking stuff apart</li>
-                <li>🦦</li>
+                <li>Make random stuff pop-up on ur computer when you login to jumpscare you😁</li>
+                <li>Read alto clef (Not that cool but eh)</li>
+                <li>Lock in at anything and speedrun in less than 30 mins</li>
+                <li>Mentally fold and rotate 3D objets/nets. Yay</li>
+                <li>Rubix cube, 2x2, 3x3, 4x4, 5x5, 6x6, Skweb, pyramix, Megamix, Random ones from temu, Clock.
+ (All not very fast cause me not bothered to learn 500 algorithems. But I can solve so I call win. )</li>
+
             </ul>
         </section>
 
+<section class="Stuff">
+            <h2>WHY I HAVE SO MANY SHIPS</h2>
+            <ul>
+                <li>Gee thanks a lot. (I will kill you one day. Priscilla, Amy, Jerry, Will.😡) (Mostly them, but other ppl as well, but there too many so they're safe😄)</li>
+                <li>Grrrrrr</li>
+                <li>Grrrrrrrrrrrrr</li>
+                <li>Grrrrrrrrrrrrr</li>
+                <li>Grrrrrrrrrrrrr</li>
+
+            </ul>
+        </section>
     </main>
+     
+
+
+<section class="my-new-section">
+    <h2>My locker code</h2>
+    <p>Damn if I knew what it was I would put it here. But I don't, I genuinely forgot it. I'm so cooked.😭</p>
+</section>
+
+<section class="my-new-section">
+    <h2>Who I like</h2>
+    <p>I like... Wow did you really think I would just tell you like that. Dissapointing. (IDC ABT SPELLING)</p>
+</section>
+
+
+<section class="quiz-section" style="margin-top: 30px; padding: 20px; background-color: #FFFFFF; border-radius: 10px;">
+    <h2>Mini Quiz </h2>
+    <p>What do I hate most?</p>
+    
+    <button onclick="checkAnswer('wrong')">My phone</button>
+    <button onclick="checkAnswer('correct')">Boredom</button>
+    <button onclick="checkAnswer('wrong')">Pink fluffy unicorns</button>
+    
+    <p id="quiz-result" style="font-weight: bold; margin-top: 10px;"></p>
+</section>
+
+<script>
+    function checkAnswer(status) {
+        const result = document.getElementById('quiz-result');
+        if (status === 'correct') {
+            result.textContent = "Good job, you got it right";
+            result.style.color = "green";
+        } else {
+            result.textContent = "You suck";
+            result.style.color = "red";
+        }
+    }
+</script>
+
+<section class="countdown-section" style="margin-top: 30px; padding: 20px; background-color: #ffffff; border-radius: 10px; text-align: center;">
+    <h2>Countdown to end of school</h2>
+    <div id="countdown" style="font-size: 24px; font-weight: bold; margin-top: 15px; color: #e65100;">
+        Loading timer...
+    </div>
+</section>
+
+<script>
+    // Set the target date you want to count down to: Year, Month, Day, Hour, Minute
+    // Note: In JavaScript, months start at 0 (0 = January, 11 = December)
+    // Example below is set for New Year's Eve: December 31, 2026
+    const targetDate = new Date(2026, 11).getTime();
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        if (distance < 0) {
+            document.getElementById("countdown").innerHTML = "🎉 The time has arrived!";
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML = 
+            days + " days " + hours + "h " + minutes + "m " + seconds + "s ";
+    }
+
+    // Run the timer every 1 second
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+</script>
+
 
     <footer>
-        <p>Built by me in 2026</p>
+        <p>Built by me on 28/09/2026</p>
     </footer>
-<section class="my-new-section">
-    <h2>My Hobbies & Skills</h2>
-    <p>During the school holidays, I'm learning how to code and practice cool skills! 🚀✨</p>
-</section>
+
 </body>
 </html>
+    </div>
+
+    <script>
+        const targetSentence = "Oshawott is the best and cutest Pokemon idc what you say";
+        const inputField = document.getElementById("user-input");
+        const feedback = document.getElementById("feedback");
+        let startTime = null;
+
+        inputField.addEventListener("input", () => {
+            if (!startTime) {
+                startTime = new Date().getTime(); // Start timer on first keystroke
+            }
+
+            const typedText = inputField.value;
+
+            // Check if they finished typing the sentence correctly
+            if (typedText === targetSentence) {
+                const endTime = new Date().getTime();
+                const timeTakenInMinutes = (endTime - startTime) / 60000;
+                
+                // Calculate words per minute (assuming standard word length of 5 chars)
+                const wordCount = targetSentence.split(" ").length;
+                const wpm = Math.round(wordCount / timeTakenInMinutes);
+
+                const targetWPM = 70; // Change this to whatever speed you want!
+
+                if (wpm >= targetWPM) {
+                    feedback.style.color = "green";
+                    feedback.textContent = `Hmmmm you got ${wpm} WPM. Good enought I guess`;
+                    
+                    // Hide the gate and show the website after a brief moment
+                    setTimeout(() => {
+                        document.getElementById("typing-gate").style.display = "none";
+                        document.getElementById("main-content").style.display = "block";
+                    }, 1000);
+                } else {
+                    feedback.style.color = "orange";
+                    feedback.textContent = `Haha you suck at typing`;
+                }
+            } else if (targetSentence.startsWith(typedText)) {
+                feedback.style.color = "lightblue";
+                feedback.textContent = "Hmmmmmm";
+            } else {
+                feedback.style.color = "red";
+                feedback.textContent = "Haha you made a mistake you suck";
+            }
+        });
+    </script>
