@@ -219,8 +219,7 @@ inputField.addEventListener("paste", (e) => {
                 const wordCount = targetSentence.split(" ").length;
                 const wpm = Math.round(wordCount / timeTakenInMinutes);
 
-                const targetWPM = 70; // Change this to whatever speed you want!
-
+                const targetWPM = 70; // Change this
                 if (wpm >= targetWPM) {
                     feedback.style.color = "green";
                     feedback.textContent = `Hmmmm you got ${wpm} WPM. Good enought I guess`;
